@@ -11,7 +11,7 @@ rescue LoadError
   require 'action_controller'
 end
 
-require File.dirname(__FILE__) + '/../lib/profanity_filter'
+require File.dirname(__FILE__) + '/../lib/fu-fu/profanity_filter'
 
 ActiveRecord::Base.logger = Logger.new(File.dirname(__FILE__) + '/debug.log')
 ActiveRecord::Base.configurations = YAML::load(IO.read(File.dirname(__FILE__) + '/database.yml'))
