@@ -1,7 +1,3 @@
-require 'profanity_filter'
-ActiveRecord::Base.send(:include, ProfanityFilter)
+require 'fu-fu/profanity_filter'
 
-module Fu
-    module Fu
-    end
-end
+ActiveRecord::Base.send(:include, ProfanityFilter)
